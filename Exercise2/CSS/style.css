@@ -1,0 +1,18 @@
+h1{
+    color: red;
+}
+
+h2{
+    color: grey;
+    text-decoration: underline;
+}
+
+span.Franky{
+    color: grey;
+    background-color: green
+}
+
+span.Avi{
+    color: grey;
+    background-color: lightblue
+}
