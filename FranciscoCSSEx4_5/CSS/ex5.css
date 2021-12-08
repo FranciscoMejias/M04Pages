@@ -1,0 +1,24 @@
+*{
+    border: 1px solid black;
+}
+.menu {
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+}
+
+.subtitle {
+    border: 1px solid red;
+    display: flex;
+}
+
+h2 {
+    float: left;
+    width: 100px;
+}
+
+h2 ~ h2 {
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+}
