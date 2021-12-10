@@ -1,24 +1,56 @@
-*{
-    border: 1px solid black;
-}
-.menu {
-    clear: both;
-    display: flex;
-    justify-content: space-around;
+header *, main *, footer {
+    margin: 4px;
 }
 
-.subtitle {
-    border: 1px solid red;
+header {
+    margin-bottom: 10px;
+}
+
+h1 {
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+header div {
     display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    padding: 4px;
 }
 
 h2 {
     float: left;
     width: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
 }
 
 h2 ~ h2 {
-    position: absolute;
-    
-    color: red;
+    float: right;
+    margin-right: calc(50% - 100px);
+}
+
+header ul {
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgrey;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+main div {
+    display: flex;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: lightgrey;
+    padding: 5px;
+    padding-left: 25px;
 }
