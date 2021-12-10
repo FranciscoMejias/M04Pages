@@ -53,6 +53,10 @@ main div {
     margin-bottom: 10px;
 }
 
+main figure {
+    margin: 0px;
+}
+
 footer {
     background-color: lightgrey;
     padding: 5px;
