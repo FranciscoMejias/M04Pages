@@ -32,21 +32,29 @@ h2 ~ h2 {
     margin-right: calc(50% - 100px);
 }
 
-header ul {
+header nav {
+    margin: 0px;
+}
+
+header nav ul {
     clear: both;
     display: flex;
     justify-content: space-around;
     background-color: lightgrey;
 }
 
-header ul li {
+header nav ul li {
     display: inline-block;
 }
 
-main div {
+main article {
     display: flex;
     margin: 0px;
     margin-bottom: 10px;
+}
+
+main figure {
+    margin: 0px;
 }
 
 footer {
