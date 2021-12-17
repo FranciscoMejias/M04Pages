@@ -1,0 +1,17 @@
+body{
+    background-image: url("../imagenes/Quesos.jpg");
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.container{
+    opacity: 1;
+    width: 90%;
+    min-width: 630px ;
+    background-color: seashell;
+}
+/*body {
+    background: rgba(255, 255, 255, 0.5) url(../imagenes/Quesos.jpg) no-repeat 0 50%;
+    background: -o-repeating-linear-gradient(100px);
+}*/
