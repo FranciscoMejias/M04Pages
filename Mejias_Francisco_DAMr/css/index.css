@@ -102,6 +102,26 @@ a {
         background-color: black;
     }
 }
+@media screen and (max-width: 530px){
+    .container{
+        background-color: red;
+    }
+}
+@media screen and (max-width: 520px){
+    .container{
+        background-color: white;
+    }
+}
+@media screen and (max-width: 510px){
+    .container{
+        background-color: blue;
+    }
+}
+@media screen and (max-width: 500px){
+    .container{
+        background-color: green;
+    }
+}
 
 /*
 @media screen and (max-width: 800px){MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA   
