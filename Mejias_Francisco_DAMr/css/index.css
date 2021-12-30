@@ -96,6 +96,12 @@ a {
     }
 }
 
+@media screen and (max-width: 540px){
+    .container{
+        background-color: black;
+    }
+}
+
 /*
 @media screen and (max-width: 800px){MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA   
     .main {
