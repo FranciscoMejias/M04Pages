@@ -1,0 +1,63 @@
+@media screen and (max-width: 800px){
+    .container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .container {
+        width: 90%;
+    }
+
+    body {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .container {
+        width: 95%;
+        margin-top: 2.5%;
+    }
+
+    body {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    body {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    body {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .container{
+        width: 100%;
+        margin-top: 0.5%;
+    }
+    body {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .container {
+        width: 100%;
+        margin-top: 0px;
+        border-radius: 0px;
+        background-image: url(../imagenes/Background-claro.png);
+    }
+
+    body {
+        margin: 0px;
+        background-color: rgb(255, 235, 214);
+        background-image: none;
+    }
+}

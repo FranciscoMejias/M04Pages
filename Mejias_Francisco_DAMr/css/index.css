@@ -11,7 +11,8 @@ body{
 .container{
     display: flex;
     justify-content: center;
-    width: calc(80% + 0px);
+    width: 80%;
+    height: 5000px;
     max-width: 1400px;
 
     margin-top: 20px;
@@ -40,110 +41,4 @@ header {
 figure {
     display: flex;
     justify-content: center;
-}
-
-nav {
-    position: sticky; 
-    top: 0;
-    background-color: rgb(217, 195, 171);
-    border-radius: 10px;
-}
-
-ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0px;
-    margin: 0px;
-}
-
-li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    width: 20%;
-    height: 2em;
-}
-
-li~li {
-
-    border-left: 2px solid black;
-}
-
-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    
-
-    font-size: 1em;
-    color: black;
-    text-decoration: none;
-    font-family: 'Lobster Two';
-}
-
-@media screen and (max-width: 800px){
-    .container {
-        width: 85%;
-    }
-}
-
-@media screen and (max-width: 740px){
-    .container {
-        width: 90%;
-    }
-
-    body {
-        font-size: 23px;
-    }
-}
-
-@media screen and (max-width: 610px){
-    .container {
-        width: 95%;
-        margin-top: 2.5%;
-    }
-
-    body {
-        font-size: 21px;
-    }
-}
-
-@media screen and (max-width: 540px){
-    body {
-        font-size: 19px;
-    }
-}
-
-@media screen and (max-width: 480px){
-    body {
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 430px){
-    .container{
-        width: 100%;
-        margin-top: 0.5%;
-    }
-    body {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 370px){
-    .container {
-        width: 100%;
-        margin-top: 0px;
-        border-radius: 0px;
-        background-image: url(../imagenes/Background-claro.png);
-    }
-
-    body {
-        margin: 0px;
-        background-color: rgb(255, 235, 214);
-        background-image: none;
-    }
 }
