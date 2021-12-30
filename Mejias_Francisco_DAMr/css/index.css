@@ -11,7 +11,7 @@ body{
 .container{
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: calc(80% + 0px);
     max-width: 1400px;
 
     margin-top: 20px;
@@ -84,7 +84,54 @@ a {
     font-family: 'Lobster Two';
 }
 
-@media screen and (max-width: 590px){
+@media screen and (max-width: 800px){
+    .container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .container {
+        width: 90%;
+    }
+
+    body {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .container {
+        width: 95%;
+    }
+
+    body {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    body {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    body {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .container{
+        width: 100%;
+    }
+    body {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 370px){
     .container {
         width: 100%;
         margin-top: 0px;
@@ -98,29 +145,3 @@ a {
         background-image: none;
     }
 }
-
-@media screen and (max-width: 740px){
-    body {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 460px){
-    body {
-        font-size: 15px;
-    }
-}
-
-
-
-/*
-@media screen and (max-width: 800px){MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA   
-    .main {
-        width: 100%;
-    }
-
-    aside {
-        width: 100%;
-    }
-}
-*/
