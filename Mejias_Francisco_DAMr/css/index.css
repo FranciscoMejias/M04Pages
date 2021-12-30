@@ -5,7 +5,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: rgb(255, 225, 194);
-
+    font-size: 25px;
 }
 
 .container{
@@ -78,26 +78,40 @@ a {
     height: 100%;
     
 
-    font-size: 25px;
+    font-size: 1em;
     color: black;
     text-decoration: none;
     font-family: 'Lobster Two';
 }
 
-@media screen and (max-width: 580px){
+@media screen and (max-width: 590px){
     .container {
         width: 100%;
         margin-top: 0px;
         border-radius: 0px;
-    }
-    header {
         background-image: url(../imagenes/Background-claro.png);
     }
 
     body {
         margin: 0px;
+        background-color: rgb(255, 235, 214);
+        background-image: none;
     }
 }
+
+@media screen and (max-width: 740px){
+    body {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    body {
+        font-size: 15px;
+    }
+}
+
+
 
 /*
 @media screen and (max-width: 800px){MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA   
