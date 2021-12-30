@@ -102,7 +102,7 @@ a {
         background-color: black;
     }
 }
-@media screen and (max-width: 530px){
+@media screen and (max-width: 539px){
     .container{
         background-color: red;
     }
