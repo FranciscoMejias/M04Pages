@@ -9,14 +9,16 @@ body{
 }
 
 .container{
-    display: flexbox;
+    display: inline-block;
     width: 80%;
     height: 2000px;
     max-width: 1400px;
 
     margin-top: 20px;
     padding-top: 10px;
-    
+    padding-left: 1em;
+    padding-right: 1em;    
+
     background-color: rgb(255, 235, 214);
     
     border-radius: 20px;
@@ -32,16 +34,12 @@ body{
     min-width: 260px;
 }
 
-header {
-    width: 100%;
-    top: 0;
-}
-
-main {
-    width: 100%;
-}
-
 figure {
     display: flex;
     justify-content: center;
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
 }

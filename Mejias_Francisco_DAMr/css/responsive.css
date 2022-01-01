@@ -1,6 +1,58 @@
+@media screen and (max-width: 840px){
+    .container {
+        width: 81%;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .container {
+        width: 82%;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .container {
+        width: 83%;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .container {
+        width: 84%;
+    }
+}
+
 @media screen and (max-width: 800px){
     .container {
         width: 85%;
+    }
+
+    body {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 788px){
+    .container {
+        width: 86%;
+    }
+}
+
+@media screen and (max-width: 776px){
+    .container {
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 764px){
+    .container {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 752px){
+    .container {
+        width: 89%;
     }
 }
 
@@ -11,6 +63,36 @@
 
     body {
         font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 714px){
+    .container {
+        width: 91%;
+    }
+}
+
+@media screen and (max-width: 688px){
+    .container {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .container {
+        width: 93%;
+    }
+}
+
+@media screen and (max-width: 662px){
+    body {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 636px){
+    .container {
+        width: 94%;
     }
 }
 
@@ -25,6 +107,12 @@
     }
 }
 
+@media screen and (max-width: 575px){
+    body {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 540px){
     body {
         font-size: 19px;
@@ -36,7 +124,7 @@
         width: 100%;
         margin-top: 0px;
         border-radius: 0px;
-        background-image: url(../imagenes/Background_claro2.png);
+        background-image: url(../imagenes/Background_claro.png);
     }
 
     body {
