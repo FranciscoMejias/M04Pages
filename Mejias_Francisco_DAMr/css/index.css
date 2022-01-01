@@ -9,10 +9,9 @@ body{
 }
 
 .container{
-    display: flex;
-    justify-content: center;
+    display: flexbox;
     width: 80%;
-    height: 5000px;
+    height: 2000px;
     max-width: 1400px;
 
     margin-top: 20px;
@@ -26,7 +25,7 @@ body{
     /*box-sizing: border-box;MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA*/
 }
 
-img {
+.logo {
     width: 100%;
     height: auto;
     max-width: 596px;
@@ -34,8 +33,12 @@ img {
 }
 
 header {
-    width: 95%;
+    width: 100%;
     top: 0;
+}
+
+main {
+    width: 100%;
 }
 
 figure {
