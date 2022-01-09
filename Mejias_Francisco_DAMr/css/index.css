@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
+:root {
+    --title-big: 1em;
+    --title: 0.8em;
+    --text: 0.7em;
+    --text-little: 0.6em;
+}
+
+
 body{
     background-image: url(../imagenes/Background.png);
     display: flex;
@@ -11,7 +19,6 @@ body{
 .container{
     display: inline-block;
     width: 80%;
-    height: 2000px;
     max-width: 1400px;
 
     margin-top: 20px;
@@ -24,7 +31,11 @@ body{
     border-radius: 20px;
 
 
-    /*box-sizing: border-box;MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA MIRAR YAAA*/
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 figure {
@@ -71,33 +82,38 @@ aside figure {
 }
 
 aside article p:first-of-type {
-    font-size: 0.8em;
+    font-size: var(--title);
     text-align: center;
     margin: 0px;
     margin-bottom: 0.2em;
 }
 
 aside article p:nth-of-type(2n) {
-    font-size: 0.6em;
+    font-size: var(--text-little);
     margin: 0px;
     margin-top: 0.5em;
+    text-align: center;
 }
 
-aside article:first-of-type img {
+aside a article:first-of-type img {
     min-width: calc(150px / 5);
     max-width: 150px;
 }
 
-aside article:nth-of-type(2n) img {
+aside article img {
     min-width: calc(190px / 5);
     max-width: 190px;
 }
 
-aside article:last-of-type{
+aside article {
     background-color: rgb(217, 195, 171);
 }
 
-aside article:nth-of-type(2n) a{
+aside a article {
+    background-color: rgb(255, 235, 214);
+}
+
+aside article:first-of-type a{
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -105,24 +121,90 @@ aside article:nth-of-type(2n) a{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.8em;
-    color: black;
-    text-decoration: none;
+    font-size: var(--title);
     background-color: rgb(8, 192, 23);
 }
 
+aside article:first-of-type a:hover {
+    text-decoration: underline;
+}
 
 section {
     display: flex;
+    flex-wrap: wrap;
     width: 80%;
     padding-left: 1em;
     padding-right: 1em;
 }
 
-section article {
-    margin: 0.5em;
+section a {
+    padding: 0.5em;
+    box-sizing: border-box;
+    width: 50%;
+    max-width: 300px;
+    overflow: hidden;
 }
 
 section article figure {
     margin: 0px;
+}
+
+section article img {
+    max-width: 270px;
+    max-height: 180px;
+}
+
+section article p:first-of-type {
+    font-size: var(--title);
+    text-align: center;
+}
+
+section article p:nth-of-type(2n) {
+    font-size: var(--text-little);
+    text-align: center;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+}
+
+section article p:nth-of-type(3n) {
+    font-size: var(--text);
+}
+
+footer {
+    background-color: rgb(217, 195, 171);
+    margin-bottom: 1em;
+}
+
+
+footer ul {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+footer ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 20%;
+    height: 2em;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: var(--title);
+    font-family: 'Lobster Two';
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
