@@ -1,73 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
+/*     VARIABLES     */
 :root {
     --title-big: 1em;
     --title: 0.8em;
     --text: 0.7em;
     --text-little: 0.6em;
 }
+/*********************************************************/
 
-
-body{
-    background-image: url(../imagenes/Background.png);
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 225, 194);
-    font-size: 24px;
-}
-
-.container{
-    display: inline-block;
-    width: 80%;
-    max-width: 1400px;
-
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-left: 1em;
-    padding-right: 1em;    
-
-    background-color: rgb(255, 235, 214);
-    
-    border-radius: 20px;
-
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-figure {
-    display: flex;
-    justify-content: center;
-}
-
-header figure {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-.logo {
-    max-width: 596px;
-    min-width: calc(596px / 5);
-}
-
-main {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 1em;
-}
-
-/*********************************************************************************/
-
+/*     ASIDE     */
 aside {
     width: 20%;
 }
@@ -128,7 +70,9 @@ aside article:first-of-type a{
 aside article:first-of-type a:hover {
     text-decoration: underline;
 }
+/*********************************************************/
 
+/*     SECTION     */
 section {
     display: flex;
     flex-wrap: wrap;
@@ -193,57 +137,10 @@ section article p:nth-of-type(3n)::-webkit-scrollbar-thumb {
     border-radius: 1px;
 }
 
-body::-webkit-scrollbar {
-    width: 0.4em;
-}
-body::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 1px;
-}
-
 section a:hover {
     border: 2px solid black;
     padding: 0.5em;
     box-shadow: 2.5px 5px 5px 2.5px rgba(0, 0, 0, 0.3);
     transform: scale(1.01);
     z-index: 0;
-}
-
-footer {
-    background-color: rgb(217, 195, 171);
-    margin-bottom: 1em;
-}
-
-
-footer ul {
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-footer ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    width: 20%;
-    height: 2em;
-}
-
-footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    font-size: var(--title);
-    font-family: 'Lobster Two';
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
