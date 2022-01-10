@@ -23,7 +23,7 @@ nav ul li {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    width: 20%;
+    width: calc(100% / 5);
     height: 2em;
 }
 
