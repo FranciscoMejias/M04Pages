@@ -1,12 +1,3 @@
-/*     VARIABLES     */
-:root {
-    --title-big: 1em;
-    --title: 0.8em;
-    --text: 0.7em;
-    --text-little: 0.6em;
-}
-/*********************************************************/
-
 body{
     background-image: url(../imagenes/Background.png);
     display: flex;
