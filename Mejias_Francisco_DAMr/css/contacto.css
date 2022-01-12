@@ -57,19 +57,22 @@ main div:nth-of-type(4) * {
     width: 100%;
 }
 
-main div:nth-of-type(5) * {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    font-size: var(--title);
-}
-
 main div:nth-of-type(5) {
     margin-left: auto;
     margin-right: auto;
 }
 
+main div:nth-of-type(5) * {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: var(--title);
+    height: 1.5em;
+}
+
 main div:nth-of-type(5) *:hover {
     border: 2px solid black;
-    transform: scale(1.2);
+    box-shadow: 2.5px 5px 5px 2.5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.01);
+    z-index: 0;
 }

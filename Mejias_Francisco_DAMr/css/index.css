@@ -123,6 +123,7 @@ section article p:nth-of-type(3n) {
 section article p:nth-of-type(3n)::-webkit-scrollbar {
     width: 2px;
 }
+
 section article p:nth-of-type(3n)::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1px;

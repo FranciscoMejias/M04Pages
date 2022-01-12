@@ -102,5 +102,7 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    border: 2px solid black;
+    transform: scale(1.03);
+    z-index: 0;
 }
