@@ -2,12 +2,24 @@ form {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form p {
+    width: 100%;
+    text-align: center;
+    font-size: var(--title-big);
+    font-family: 'Lobster Two';
+    margin: 0px;
+    margin-bottom: 1em;
 }
 
 form div{
     width: 49.5%;
     box-sizing: border-box;
-    max-width: calc(400px + 0.5em);
+    max-width: 400px;
 }
 
 form div *{
