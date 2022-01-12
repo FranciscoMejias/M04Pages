@@ -1,5 +1,5 @@
 body{
-    background-image: url(../imagenes/Background.png);
+    background-image: url(../imagenes/background.png);
     display: flex;
     justify-content: center;
     background-color: rgb(255, 225, 194);
@@ -9,12 +9,11 @@ body{
 .container{
     display: inline-block;
     width: 80%;
-    max-width: 1400px;
+    max-width: 1175px;
 
     margin-top: 20px;
     padding-top: 10px;
-    padding-left: 1em;
-    padding-right: 1em;    
+    padding-left: 1em;  
 
     background-color: rgb(255, 235, 214);
     

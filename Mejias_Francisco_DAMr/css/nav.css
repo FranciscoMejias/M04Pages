@@ -23,7 +23,7 @@ nav ul li {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    width: calc(100% / 5);
+    width: calc(100% / 4);
     height: 2em;
 }
 
@@ -51,11 +51,9 @@ nav ul li a:hover {
 nav ul li:first-of-type a:hover {
     border-radius: 10px 0px 0px 10px;
     border: 2px solid black;
-    z-index: 0;
 }
 
 nav ul li:last-of-type a:hover {
     border-radius: 0px 10px 10px 0px;
     border: 2px solid black;
-    z-index: 0;
 }
