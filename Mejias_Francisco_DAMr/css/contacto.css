@@ -67,7 +67,7 @@ main div:nth-of-type(5) * {
     padding: 0px;
     border: 0px;
     font-size: var(--title);
-    height: 1.5em;
+    height: 2em;
 }
 
 main div:nth-of-type(5) *:hover {
