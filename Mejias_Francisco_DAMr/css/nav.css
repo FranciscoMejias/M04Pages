@@ -53,6 +53,5 @@ nav ul li a {
 
 nav ul li a:hover {
     border: 2px solid black;
-    transform: scale(1.03);
     z-index: 0;
 }
