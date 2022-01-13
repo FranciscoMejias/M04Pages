@@ -1,4 +1,4 @@
-/*     SECTION PAGINACION     */
+/*     DIV LEFT     */
 div.left {
     width: 20%;
     margin: 0px;
@@ -96,13 +96,21 @@ section.paginacion ul li {
 section.paginacion ul li a{
     margin: 0px;
     padding: 0px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    background-image: url(../imagenes/anotherQuesito.png);
 }
 
-section.paginacion ul li a img{
-    max-width: 75px;
+section.paginacion ul li a p::before{
     margin: 0px;
     padding: 0px;
-    content: attr('1');
+    content: "hola";
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
 
