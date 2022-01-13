@@ -1,75 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
-
-:root {
-    --title-big: 1em;
-    --title: 0.8em;
-    --text: 0.7em;
-    --text-little: 0.6em;
-}
-
-
-body{
-    background-image: url(../imagenes/Background.png);
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 225, 194);
-    font-size: 24px;
-}
-
-.container{
-    display: inline-block;
-    width: 80%;
-    max-width: 1400px;
-
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-left: 1em;
-    padding-right: 1em;    
-
-    background-color: rgb(255, 235, 214);
-    
-    border-radius: 20px;
-
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-figure {
-    display: flex;
-    justify-content: center;
-}
-
-header figure {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-.logo {
-    max-width: 596px;
-    min-width: calc(596px / 5);
-}
-
-main {
-    display: flex;
+/*     SECTION PAGINACION     */
+div.left {
+    width: 20%;
     margin: 0px;
     padding: 0px;
-    margin-bottom: 1em;
 }
 
-/*********************************************************************************/
+/*********************************************************/
 
+/*     ASIDE     */
 aside {
-    width: 20%;
+    width: 100%;
 }
 
 aside article:first-of-type {
@@ -98,6 +38,8 @@ aside article p:nth-of-type(2n) {
 aside a article:first-of-type img {
     min-width: calc(150px / 5);
     max-width: 150px;
+    border-radius: 50%;
+
 }
 
 aside article img {
@@ -129,7 +71,45 @@ aside article:first-of-type a:hover {
     text-decoration: underline;
 }
 
-section {
+/*********************************************************/
+
+/*     SECTION PAGINACION     */
+section.paginacion {
+    width: 100%;
+}
+
+section.paginacion {
+    background-color: rgb(217, 195, 171);
+}
+
+section.paginacion ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+section.paginacion ul li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+section.paginacion ul li a{
+    margin: 0px;
+    padding: 0px;
+}
+
+section.paginacion ul li a img{
+    max-width: 75px;
+    margin: 0px;
+    padding: 0px;
+    content: attr('1');
+}
+
+
+/*********************************************************/
+
+/*     SECTION RECETAS     */
+section.recetas {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
@@ -137,41 +117,42 @@ section {
     padding-right: 1em;
 }
 
-section a {
+section.recetas a {
     padding: calc(0.5em + 2px);
     box-sizing: border-box;
     width: 50%;
     max-width: 300px;
     height: 17em;
+    top: 0px;
 }
 
-section article {
+section.recetas article {
     height: 16em;
 }
 
-section article figure {
+section.recetas article figure {
     margin: 0px;
     height: 35%;
 }
 
-section article img {
+section.recetas article img {
     max-width: 260px;
     max-height: 195px;
 }
 
-section article p {
+section.recetas article p {
     display: flex;
     justify-content: center;
 }
 
-section article p:first-of-type {
+section.recetas article p:first-of-type {
     align-items: center;
     text-align: center;
     font-size: var(--title);
     height: 15%;
 }
 
-section article p:nth-of-type(2n) {
+section.recetas article p:nth-of-type(2n) {
     align-items: center;
     font-size: var(--text-little);
     border-top: 2px solid green;
@@ -179,61 +160,25 @@ section article p:nth-of-type(2n) {
     height: 5%;
 }
 
-section article p:nth-of-type(3n) {
+section.recetas article p:nth-of-type(3n) {
     font-size: var(--text);
     height: 30%;
     overflow: auto;
 }
 
-section article p:nth-of-type(3n)::-webkit-scrollbar {
+section.recetas article p:nth-of-type(3n)::-webkit-scrollbar {
     width: 2px;
 }
-section article p:nth-of-type(3n)::-webkit-scrollbar-thumb {
-    background-color: black;
+
+section.recetas article p:nth-of-type(3n)::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1px;
 }
 
-section a:hover {
+section.recetas a:hover {
     border: 2px solid black;
     padding: 0.5em;
-    box-shadow: 2.5px 5px 5px 2.5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2.5px 5px 5px 2.5px rgba(0, 0, 0, 0.3);
     transform: scale(1.01);
-}
-
-footer {
-    background-color: rgb(217, 195, 171);
-    margin-bottom: 1em;
-}
-
-
-footer ul {
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-footer ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    width: 20%;
-    height: 2em;
-}
-
-footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    font-size: var(--title);
-    font-family: 'Lobster Two';
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    z-index: 0;
 }

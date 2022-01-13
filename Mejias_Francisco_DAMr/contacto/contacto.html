@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--**********************************************************
+NOMBRE: Francisco
+APELLIDOS: Mejias Brioso
+**********************************************************-->
+<html>
+<head>
+    <title>We need more Cheese</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imagenes/quesito.png">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="We need more Cheese es una página de recetas que contienen gran cantidad de queso"/>
+</head>
+<body>
+<div class="container">
+    <header>
+        <figure>
+            <img class=logo src="../imagenes/WeNeedMoreCheese.png"
+                 width="596" height="306"
+                 alt="We need more Cheese Logo">
+        </figure>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre mí</a></li>
+            <li><a href="">Recetas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="javascript: sendEmail()" method="get">
+            <p>¿Necesitas Ayuda? ¡Envíame un email!</p>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div>
+                <label for="apellidos">Apellido:</label>
+                <input type="text" id="apellidos" placeholder="Apellidos">
+            </div>
+            <div>
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" placeholder="Asunto" required>
+            </div>
+            <div>
+                <label for="body">Cuerpo:</label>
+                <textarea id="body" rows="4" placeholder="Cuerpo del correo"></textarea>
+            </div>
+            <div>
+                <input type="submit" id="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li><a target="_blank" href="https://twitter.com/Fran1535">Twitter</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/fran_153/">Instagram</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/francisco-mejias-brioso/">Linkedin</a></li>
+            <li><a href="mailto:francisco.mejias.7e5@itb.cat">Email</a></li>
+            <li><a target="_blank" href="https://github.com/FranciscoMejias">Github</a></li>
+        </ul>
+    </footer>
+</div>
+<script>
+    function sendEmail(){
+        var nombre = document.getElementById("nombre").value;
+        var apellidos = document.getElementById("apellidos").value;
+        var subject = document.getElementById("subject").value;
+        var body = document.getElementById("body").value;
+        var mailto = 'mailto:francisco.mejias.7e5@itb.cat?subject='+subject+'&body=Hola soy '+nombre+' '+apellidos+' y queria hablar con usted de este tema. '+body;
+        window.open(mailto);
+    }
+</script>
+</body>
+</html>

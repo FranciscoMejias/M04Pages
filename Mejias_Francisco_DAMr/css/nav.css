@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
 nav {
     width: 100%;
     margin-bottom: 2em;
 
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 nav ul {
@@ -20,7 +23,7 @@ nav ul li {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    width: 20%;
+    width: calc(100% / 4);
     height: 2em;
 }
 
@@ -41,5 +44,16 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    border: 2px solid black;
+    z-index: 0;
+}
+
+nav ul li:first-of-type a:hover {
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid black;
+}
+
+nav ul li:last-of-type a:hover {
+    border-radius: 0px 10px 10px 0px;
+    border: 2px solid black;
 }
