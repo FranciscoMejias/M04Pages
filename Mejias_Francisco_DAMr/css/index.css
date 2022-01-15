@@ -74,37 +74,58 @@ aside article:first-of-type a:hover {
 /*********************************************************/
 
 /*     SECTION PAGINACION     */
-section.paginacion {
-    width: 100%;
-}
 
 section.paginacion {
     background-color: rgb(217, 195, 171);
+    width: 100%;
+    display: flex;
 }
 
 section.paginacion ul {
     margin: 0px;
     padding: 0px;
-    height: 18em;
+    height: 12.5em;
 }
 
 section.paginacion ul li {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    height: 2.5em;
 }
-
 section.paginacion ul li a {
     margin: 0px;
     padding: 0px;
     position: relative;
     display: inline-block;
     text-align: center;
-    background-image: url(../imagenes/anotherQuesito.png);
+    background-image: url(../imagenes/anotherCheese.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 3em;
-    height: 3em;
+    width: 3.5em;
+    height: 2.5em;
+}
+
+section.paginacion ul li:first-of-type, section.paginacion ul li:last-of-type{
+    height: 1.25em;
+}
+
+section.paginacion ul li:first-of-type a, section.paginacion ul li:last-of-type a {
+    background-image: url(../imagenes/arrowUp.png);
+    transform: rotate(-90deg);
+    width: 1.25em;
+    height: 1.25em;
+    left: 0.7em;
+}
+
+section.paginacion ul li:last-of-type a {
+    transform: rotate(90deg);
+}
+
+section.paginacion ul li.active a {
+    background-image: url(../imagenes/anotherCheeseActive.png);
+    margin: 0px;
+    padding: 0px;
 }
 
 section.paginacion ul li a::before {
@@ -114,30 +135,27 @@ section.paginacion ul li a::before {
     font-size: 1.3em;
     font-family: 'Lobster Two';
     top: calc(50% - 0.65em);
+    right: 0.4em;
 }
 
-section.paginacion ul li:nth-of-type(1) a::before {
+section.paginacion ul li.pagina1 a::before {
     content: "1";
 }
 
-section.paginacion ul li:nth-of-type(2) a::before {
+section.paginacion ul li.pagina2 a::before {
     content: "2";
 }
 
-section.paginacion ul li:nth-of-type(3) a::before {
+section.paginacion ul li.pagina3 a::before {
     content: "3";
 }
 
-section.paginacion ul li:nth-of-type(4) a::before {
-    content: "4";
+section.paginacion ul li.pagina4 a::before {
+    content: "4"
 }
 
-section.paginacion ul li:nth-of-type(5) a::before {
+section.paginacion ul li.pagina5 a::before {
     content: "5";
-}
-
-section.paginacion ul li:nth-of-type(6) a::before {
-    content: "6";
 }
 
 
