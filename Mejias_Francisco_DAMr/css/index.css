@@ -175,6 +175,15 @@ section.recetas {
     padding-right: 1em;
 }
 
+section.recetas > p {
+    width: 100%;
+    text-align: center;
+    font-family: 'Lobster Two';
+    font-size: var(--title-big);
+    margin: 0px;
+    margin-bottom: 1em;
+}
+
 section.recetas a {
     padding: calc(0.5em + 2px);
     box-sizing: border-box;
