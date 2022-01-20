@@ -1,11 +1,19 @@
 main section article:first-of-type {
-    
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+main section article:nth-of-type(2) p:first-of-type {
+    font-size: var(--title-big);
 }
 
 main section article:nth-of-type(2) {
     
 }
 
-main section article:last-of-type {
+main section article:last-of-type p:first-of-type {
+    font-size: var(--title-big);
     
 }
