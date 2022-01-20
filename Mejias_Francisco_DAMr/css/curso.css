@@ -35,6 +35,12 @@ main section article:nth-of-type(2), main section article:last-of-type {
     padding: 1em;
 }
 
-main section article:nth-of-type(2) {
-    
+main section article:last-of-type {
+    max-width: 300px;
+}
+
+main section article:last-of-type figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
