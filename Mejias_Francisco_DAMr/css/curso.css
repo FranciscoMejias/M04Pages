@@ -34,3 +34,7 @@ main section article:nth-of-type(2), main section article:last-of-type {
     box-sizing: border-box;
     padding: 1em;
 }
+
+main section article:nth-of-type(2) {
+    
+}
