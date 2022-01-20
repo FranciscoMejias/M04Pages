@@ -1,3 +1,11 @@
+main section {
+    margin: 1em;
+}
+
+main section article:nth-of-type(2), main section article:last-of-type{
+    margin: 2em;
+}
+
 main section article:first-of-type {
     width: 100%;
     max-width: 650px;
@@ -7,10 +15,6 @@ main section article:first-of-type {
 
 main section article:nth-of-type(2) p:first-of-type {
     font-size: var(--title-big);
-}
-
-main section article:nth-of-type(2) {
-    
 }
 
 main section article:last-of-type p:first-of-type {
