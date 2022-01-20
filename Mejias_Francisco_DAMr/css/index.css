@@ -115,7 +115,7 @@ section.paginacion ul li:first-of-type, section.paginacion ul li:last-of-type{
 }
 
 section.paginacion ul li:first-of-type a, section.paginacion ul li:last-of-type a {
-    background-image: url(../imagenes/arrowUp.png);
+    background-image: url(../imagenes/arrowPaginacion.webp);
     transform: rotate(-90deg);
     width: 1.25em;
     height: 1.25em;

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
 body{
-    background-image: url(../imagenes/background.png);
+    background-image: url(../imagenes/background.webp);
     display: flex;
     justify-content: center;
     background-color: rgb(255, 225, 194);
