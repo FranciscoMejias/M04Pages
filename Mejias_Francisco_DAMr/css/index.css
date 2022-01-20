@@ -127,7 +127,7 @@ section.paginacion ul li:last-of-type a {
 }
 
 section.paginacion ul li.active a {
-    background-image: url(../imagenes/anotherCheeseActive.png);
+    background-image: url(../imagenes/anotherCheeseActive.webp);
     margin: 0px;
     padding: 0px;
 }
