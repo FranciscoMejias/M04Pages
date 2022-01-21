@@ -1,0 +1,153 @@
+/* COLORES
+azul: #30c7d5;
+naranja: #dd9e6b;
+marron: #cf928b;
+gris: #4e4e4e;
+*/
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav {
+    background-color: #30c7d5;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0.8em;
+}
+
+header nav ul li:first-of-type img{
+    width: 8em;
+    height: auto;
+}
+
+header nav ul li a{
+    color: white;
+    padding: 0.4em;
+}
+
+header nav ul li a:hover{
+    background-color: #dd9e6b;
+}
+
+header div {
+    position: relative;
+    width: 45%;
+    max-width: 500px;
+    padding: 1em;
+    margin-top: 1.5em;
+    margin-left: 45%;
+    background-color: #cf928b;
+    color: #4e4e4e;
+    font-family: "Playfair Display", serif;
+    z-index: 5;
+}
+
+header div input {
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+    background-color: #4e4e4e;
+    
+}
+
+header figure {
+    position: relative;
+    bottom: 100px;
+    width: 100%;
+    height: 12em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(imagenes/sillot-mallorca.jpg);
+    z-index: 1;
+}
+
+main {
+    border-top: 3px solid #cf928b;
+    border-bottom: 3px solid #30c7d5;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 2em;
+}
+
+main section > h2{
+    width: 100%;
+    text-align: center;
+    color: #cf928b;
+}
+
+main section article {
+    margin: 0px;
+    padding: 0px;
+
+    width: 180px;
+}
+
+main section article figure {
+    margin: 0px;
+    padding: 0px;
+}
+
+main section article img{
+    width: 100%;
+    height: auto;
+}
+
+main section article figure:first-of-type img{
+    height: 150px;
+}
+
+main section article p {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+main section article a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: #4e4e4e;
+    margin: 0px;
+    padding: 0px;
+}
+
+main section article a:hover {
+    background-color: #30c7d5;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: #30c7d5;
+}
